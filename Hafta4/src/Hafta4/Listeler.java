@@ -42,7 +42,7 @@ public class Listeler {
 		System.out.println(ad);
 		ad.set(1, "Mert");
 		System.out.println("Güncellenen liste : "+ad);
-		System.out.println("Mert kaçıncı indiste : "+ad.indexOf("Mert"));
+		System.out.println("Mert kaçıncı indiste : "+ad.indexOf("Mert")); 
  		
 	}
 }
