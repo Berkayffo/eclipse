@@ -11,29 +11,30 @@ public class KisiBilgisi {
 		List<String> ad=new ArrayList();
 		List<Byte> vn=new ArrayList();
 		List<Byte> fn=new ArrayList();
-		List<Byte> bn=new ArrayList();
+		List<Byte> bn=new ArrayList();  
 		byte menu;
 		for(;;) {
-			Fonksiyonlar.MenuGoruntule();
+			Fonksiyonlar.MenuGoruntule(); 
 			menu=giris.nextByte();
 			switch (menu) {
 			case 1:Fonksiyonlar.KayıtGiris(ad,vn,fn,bn,giris);
 				
 				break;
-			case 2:Fonksiyonlar.Listele(ad,vn,fn,bn);
+			case 2:Fonksiyonlar.Listele(ad,vn,fn,bn); 
 				
 				break;
 			case 3:System.out.println("Aranacak adı girin : "); 
 			String arananAd=giris.next();
 			Fonksiyonlar.AdArama(ad,vn,fn,bn,arananAd);
-	
+	 
 				break;
 			case 4:System.out.println("Düzeltilecek adı girin : "); 
 			String düzeltilecekAd=giris.next();
 			Fonksiyonlar.AdDüzeltme(ad,vn,fn,bn,düzeltilecekAd,giris);
 	
 				break;
-			case 5:System.out.println("Silinecek adı girin : "); 
+			case 5:
+			System.out.println("Silinecek adı girin : "); 
 			String silinecekAd=giris.next();
 			Fonksiyonlar.AdSilme(ad,vn,fn,bn,silinecekAd,giris);
 	
@@ -48,7 +49,7 @@ public class KisiBilgisi {
 	
 				break;
 			case 7:System.out.println("Program bitti...");
-			System.exit(0);
+			System.exit(0); 
 				break;
 	
 

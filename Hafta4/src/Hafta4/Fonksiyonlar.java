@@ -20,7 +20,7 @@ public class Fonksiyonlar {
 		vn.add(vnot);
 		fn.add(fnot);
 		bn.add((byte) (vnot*0.4+fnot*0.6));
-		System.out.println("Başarıyla kayıt yaptınız.");
+		System.out.println("Başarıyla kayıt yaptınız.");  
 	}
 
 	public static void Listele(List<String> ad, List<Byte> vn, List<Byte> fn, List<Byte> bn) {
@@ -40,38 +40,37 @@ public class Fonksiyonlar {
 		System.out.println("Vize notu : "+vn);
 		System.out.println("Final notu : "+fn);
 		System.out.println("Başarı notu : "+bn);
-		System.out.println("--------------");
+		System.out.println("--------------"); 
 		
 	}
 
 	public static void AdArama(List<String> ad, List<Byte> vn, List<Byte> fn, List<Byte> bn, String arananAd) {
 		for (int i = 0; i < ad.size(); i++) {
 			if(ad.get(i).equalsIgnoreCase(arananAd)) {
-			Yazdır(i,ad.get(i),vn.get(i),fn.get(i),bn.get(i));
+			Yazdır(i,ad.get(i),vn.get(i),fn.get(i),bn.get(i)); 
 			
 		}
 		}	
 		
 	}
-
-
-		
-	
-
-	public static void AdDüzeltme(List<String> ad, List<Byte> vn, List<Byte> fn, List<Byte> bn, String düzeltilecekAd,
-			Scanner giris) {
+	public static void AdDüzeltme(List<String> ad, List<Byte> vn, List<Byte> fn, List<Byte> bn, String düzeltilecekAd,Scanner giris) {
 		Fonksiyonlar.AdArama(ad, vn, fn, bn, düzeltilecekAd);
+		
 		System.out.println("Hangi indisteki kayıt düzeltilecek : ");
 		int düzeltilecekIndis=giris.nextInt();
+		
 		System.out.println("Yeni isim giriniz : ");
 		ad.set(düzeltilecekIndis, giris.next());
+		
 		System.out.println("Yeni vize notu giriniz : ");
 		byte vnot = giris.nextByte();
+		
 		System.out.println("Yeni final notu giriniz : ");
 		byte fnot = giris.nextByte();
+		
 		vn.set(düzeltilecekIndis, vnot);
 		fn.set(düzeltilecekIndis, fnot);
-		bn.set(düzeltilecekIndis, (byte) (vnot * 0.4 + fnot * 0.6));
+		bn.set(düzeltilecekIndis, (byte) (vnot * 0.4 + fnot * 0.6)); 
 		System.out.println(düzeltilecekAd+"Kaydı düzeltildi");
 	}
 
@@ -91,7 +90,7 @@ public class Fonksiyonlar {
 		for(Byte sınavNot : sınavNotlar) {
 			toplam+=sınavNot;
 		}
-		return (byte) (toplam/sınavNotlar.size());
+		return (byte) (toplam/sınavNotlar.size()); 
 	}
 
 }
