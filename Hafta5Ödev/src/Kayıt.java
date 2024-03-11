@@ -11,7 +11,7 @@ public class Kayıt {
 			List<String> yayın = new ArrayList<>();
 			List<Long> sayfaSayisi = new ArrayList<>();
 			List<Long> basimYili = new ArrayList<>();
-			List<Long> fiyat = new ArrayList<>();
+			List<Long> fiyat = new ArrayList<>(); 
 
 			byte menuSecimi;
 

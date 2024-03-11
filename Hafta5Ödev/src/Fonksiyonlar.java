@@ -16,7 +16,7 @@ public class Fonksiyonlar {
 		ad.add(scanner.next());
 
 		System.out.println("Yazarını girin: ");
-		yazar.add(scanner.next());
+		yazar.add(scanner.next()); 
 
 		System.out.println("Yayın evini girin: ");
 		yayın.add(scanner.next());
@@ -34,16 +34,14 @@ public class Fonksiyonlar {
 
 	}
 
-	public static void listele(List<String> ad, List<String> yazar, List<String> yayın, List<Long> sayfaSayisi,
-			List<Long> basimYili, List<Long> fiyat) {
+	public static void listele(List<String> ad, List<String> yazar, List<String> yayın, List<Long> sayfaSayisi, List<Long> basimYili, List<Long> fiyat) {
 		for (int i = 0; i < ad.size(); i++) {
 			yazdir(i, ad.get(i), yazar.get(i), yayın.get(i), sayfaSayisi.get(i), basimYili.get(i), fiyat.get(i));
 		}
 
 	}
 
-	private static void yazdir(int indis, String ad, String yazar, String yayın, Long sayfaSayisi, Long basimYili,
-			Long fiyat) {
+	private static void yazdir(int indis, String ad, String yazar, String yayın, Long sayfaSayisi, Long basimYili, Long fiyat) {
 		System.out.println("İndis değeri: " + indis);
 		System.out.println("İsim: " + ad);
 		System.out.println("Yazar: " + yazar);
@@ -54,8 +52,7 @@ public class Fonksiyonlar {
 		System.out.println("---------------------");
 	}
 
-	public static void isimAra(Scanner scanner, List<String> ad, List<String> yazar, List<String> yayın,
-			List<Long> sayfaSayisi, List<Long> basimYili, List<Long> fiyat) {
+	public static void isimAra(Scanner scanner, List<String> ad, List<String> yazar, List<String> yayın, List<Long> sayfaSayisi, List<Long> basimYili, List<Long> fiyat) {
 		System.out.println("Aranacak ismi girin: ");
 		String arananAd = scanner.next();
 
@@ -67,8 +64,7 @@ public class Fonksiyonlar {
 
 	}
 
-	public static void duzelt(Scanner scanner, List<String> ad, List<String> yazar, List<String> yayın,
-			List<Long> sayfaSayisi, List<Long> basimYili, List<Long> fiyat) {
+	public static void duzelt(Scanner scanner, List<String> ad, List<String> yazar, List<String> yayın, List<Long> sayfaSayisi, List<Long> basimYili, List<Long> fiyat) {
 
 		System.out.println("Düzeltilecek ismi girin: ");
 		String duzeltilecekAd = scanner.next();
@@ -104,8 +100,7 @@ public class Fonksiyonlar {
 
 	}
 
-	public static void sil(Scanner scanner, List<String> ad, List<String> yazar, List<String> yayın,
-			List<Long> sayfaSayisi, List<Long> basimYili, List<Long> fiyat) {
+	public static void sil(Scanner scanner, List<String> ad, List<String> yazar, List<String> yayın, List<Long> sayfaSayisi, List<Long> basimYili, List<Long> fiyat) {
 
 		System.out.println("Silinecek ismi girin: ");
 		String silinecekAd = scanner.next();
