@@ -83,7 +83,7 @@ public class Fonksiyonlar {
 		System.out.println("Yayın evini girin: ");
 		yayın.set(duzeltilecekIndis, scanner.next());
 
-		System.out.println("Sayfa sayısını girin: ");
+		System.out.println("Sayfa sayısını girin: "); 
 		Long sayfaSayisiYeni = scanner.nextLong();
 
 		System.out.println("Basım yılını girin: ");
